@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.top{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+.mid{
+    position: absolute;
+    width: 100%;
+    top:100%;
+    height: 100%;
+    background-image: url(img/2.jpg);
+    background-size: cover;
+}
+.bottom{
+    position: absolute;
+    width: 100%;
+    top:200%;
+    height: 100%;
+    background-image: url(img/3.jpg);
+    background-size: cover;
+}
+.nav{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    background-image: url(img/ryuz.png);
+    background-size: 100% 100%;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+.logo:hover{
+    transform: scale(1);
+}
+.menu a{
+    font-family: 'Times New Roman', Times, serif;
+        left: 34%;
+        position: relative;
+        text-decoration: none;
+        color: rgb(35, 198, 219);
+        font-size: 20px;
+        font-weight: bold;
+        top: 30px;
+        margin: 20px;
+        padding: 5px;
+        background: rgb(0, 0, 0);
+        border-radius: 10px;
+}
+.menu a:hover{
+    background: transparent;
+    border-top: 2px solid rgb(191, 4, 4);
+    border-bottom: 2px solid rgb(191, 4, 4);
+}
+.up{
+        position: relative;
+        left: 82%;
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+        top: 10px;
+        margin: 20px;
+        padding: 5px;
+        background: white;
+        border-radius: 10px;
+}
+.up:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.in{
+    position: relative;
+    left: 81%;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    top: 10px;
+    margin: 20px;
+    padding: 5px;
+    background: white;
+    border-radius: 10px;
+}
+.in:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+.middle{
+    max-width: 53%;
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    color: white;
+}
+.middle span{
+    position: relative;
+    letter-spacing: 3px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    left: 10px;
+    color: coral;
+}
+.middle h1{
+    position: relative;
+    top: 10px;
+    font-size: 2em;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+}
+.middle a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background: indianred;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    top: 40px;
+}
+.middle a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+
+.slider{
+    position: relative;
+    width: 45%;
+    overflow: hidden;
+    left: 28%;
+    box-shadow: 1px 2px 10px 5px rgb(0, 0, 0);
+    
+}
+.image{
+    display: flex;
+    width: 100%;
+    
+}
+.image img{
+    height: 450px;
+    width: 100%;
+    transition: all 0.45s ease;
+}
+.image input{
+    display: none;
+    
+}
+.dots{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label{
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+    border: solid rgb(255, 255, 255) 3px;
+    cursor: pointer;
+    transition: all 0.45s ease;
+    margin: 5px;
+}
+.dots label:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+#img1:checked ~ .m1{
+    margin-left: 0%;
+}
+#img2:checked ~ .m2{
+    margin-left: -100%;
+}
+#img3:checked ~ .m3{
+    margin-left: -200%;
+}
+#img4:checked ~ .m4{
+    margin-left: -300%;
+}
+#img5:checked ~ .m5{
+    margin-left: -400%;
+}
+.game h1{
+    width: 50%;
+    left: 25%;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+}
+.game a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: sans-serif;
+    background: indianred;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    top: 40px;
+    left: 46.5%;
+}
+.game a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+.bottom h1{
+    width: 25%;
+    left: 38%;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+}
+.bottom a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: sans-serif;
+    background: indianred;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    bottom: 100px;
+    left: 48%;
+}
+.bottom a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+.bottom img{
+    position: relative;
+    transform: scale(0.5);
+    align-items: center;
+    top: 35%;
+    left: 8%;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 1px 2px 10px 5px rgb(0, 0, 0);
+}
+.bottom img:hover{
+    transform: scale(0.8);
+}
